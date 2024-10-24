@@ -1,12 +1,13 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import UserContextProvider from "./context/UserContextProvider";
 import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  return <>Reat with chai and share is important</>;
+  return (
+    <UserContextProvider>
+      <h1>React with Chai and share is important</h1>
+    </UserContextProvider>
+  );
 }
 
 export default App;
