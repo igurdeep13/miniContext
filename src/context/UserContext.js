@@ -1,5 +1,7 @@
 import React from "react";
 
-const UserContext = React.createContext()
+
+// Create a varibale from React.createContext
+const UserContext = React.createContext();
 
 export default UserContext;
